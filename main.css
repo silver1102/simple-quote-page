@@ -41,20 +41,22 @@ html,body {
   font-size: 2.5rem;
 }
   .wrapper {
-  padding-top: 12rem;
+  padding-top: 10rem;
 }
 }
 @media (min-width: 1024px)
 {
 html,body {
-  font-size:100%;
   line-height: 1.5;
 }
 }
 @media (min-width: 1920px)
 {
 html,body {
-  font-size:110%;
+  font-size:100%;
+}
+  .wrapper {
+  padding-top: 14rem;
 }
 }
 /* ----------- NAVBAR ----------- */
@@ -65,14 +67,20 @@ html,body {
     float: left;
     overflow: hidden;
 }
-.dropdown .lang {
-    font-size: 13px;
+.button {
+    background-color: slategrey;
     border: none;
-    outline: none;
-    padding: 15px 10px;
-    background-color: inherit;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 40%;
+  }
+.dropdown .button {
+    font-size: 13px;
+    padding: 4px 6px;
     font-family: inherit;
-    margin: 0;
+    margin: 5px;
 }
 .language-content {
     display: none;
@@ -90,6 +98,10 @@ html,body {
 .language:hover .language-content {
     display: block;
 }
+.flag {
+    width: 18%;
+  }
+
 .show {
   display:block;
 }
@@ -97,31 +109,30 @@ html,body {
 /* ----------- NAVBAR MEDIA QUERY ----------- */
 @media (min-width: 768px)
 {
-.navbar .dropdown .lang {
+.navbar .dropdown .button {
   font-size: 200%;
 }
-  .flag {
-    width: 15%;
-  }
-  .dropdown .lang {
-    padding: 30px 20px;
+  .dropdown .button {
+    margin: 20px 0px 10px 20px;
+    padding: 5px 8px;
   }
   .language-content {
-    min-width: 20rem;
+    min-width: 30rem;
 }
   .language-content a {
     margin: 0px 0px 0px 20px;
   }
 @media (min-width: 1024px)
 {
-  .flag {
-    width: 12%;
-  }
+  .navbar .dropdown .button {
+  font-size: 250%;
+}
   .language-content {
     min-width: 35rem;
 }
-  .dropdown .lang {
-    padding: 30px 30px;
+  .dropdown .button {
+    margin: 30px 0px 15px 30px;
+    padding: 10px 10px;
   }
   .language-content a {
     margin: 0px 0px 0px 30px;
@@ -129,11 +140,12 @@ html,body {
 }
 @media (min-width: 1920px)
 {
-  .navbar .dropdown .lang {
-  font-size: 180%;
+  .language-content {
+    min-width: 40rem;
 }
-  .dropdown .lang {
-    padding: 40px 40px;
+  .dropdown .button {
+    margin: 40px 0px 25px 40px;
+    padding: 15px 30px;
   }
   .language-content a {
     margin: 0px 0px 0px 40px;

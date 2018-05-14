@@ -11,7 +11,7 @@
 <body>
   <div class="navbar">
   <div class="dropdown">
-    <button onclick="myFunction()" class="lang">Language <i class="fa fa-caret-down"></i>
+    <button onclick="myFunction()" class="button">Language <i class="fa fa-caret-down"></i>
     </button>
     <div id="myDropdown" class="language-content">
       <a href="index.html"><img src="assets/english.jpg" class="flag"></a>
@@ -31,7 +31,7 @@ function myFunction() {
 }
 
 window.onclick = function(event) {
-  if (!event.target.matches('.lang')) {
+  if (!event.target.matches('.button')) {
 
     var dropdowns = document.getElementsByClassName("language-content");
     var i;
