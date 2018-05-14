@@ -2,7 +2,7 @@ html,body {
   margin: 0;
   padding: 0;
   font-size:50%;
-  line-height: 1.2;
+  line-height: 1.5;
 }
 body {
   width: 100%;
@@ -26,14 +26,22 @@ body {
 
 .author {
   font-family: 'Crimson Text', serif;
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   font-style: italic;
 }
+
+/* ----------- MEDIA QUERY ----------- */
 @media (min-width: 768px)
 {
 html,body {
   font-size:85%;
   line-height: 1.4;
+}
+.author {
+  font-size: 2.5rem;
+}
+  .wrapper {
+  padding-top: 12rem;
 }
 }
 @media (min-width: 1024px)
@@ -42,7 +50,92 @@ html,body {
   font-size:100%;
   line-height: 1.5;
 }
-  .wrapper {
-  padding-top: 4rem;
+}
+@media (min-width: 1920px)
+{
+html,body {
+  font-size:110%;
+}
+}
+/* ----------- NAVBAR ----------- */
+.navbar {
+    font-family: 'Julius Sans One', sans-serif;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropdown .lang {
+    font-size: 13px;
+    border: none;
+    outline: none;
+    padding: 15px 10px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.language-content {
+    display: none;
+    text-align: left;
+    background-color: none;
+    max-width: 25rem;
+    overflow: auto;
+    z-index: 1;
+}
+.language-content a {
+    float: none;
+    margin: 0px 0px 0px 12px;
+    text-decoration: none;
+}
+.language:hover .language-content {
+    display: block;
+}
+.show {
+  display:block;
+}
+
+/* ----------- NAVBAR MEDIA QUERY ----------- */
+@media (min-width: 768px)
+{
+.navbar .dropdown .lang {
+  font-size: 200%;
+}
+  .flag {
+    width: 15%;
+  }
+  .dropdown .lang {
+    padding: 30px 20px;
+  }
+  .language-content {
+    min-width: 20rem;
+}
+  .language-content a {
+    margin: 0px 0px 0px 20px;
+  }
+@media (min-width: 1024px)
+{
+  .flag {
+    width: 12%;
+  }
+  .language-content {
+    min-width: 35rem;
+}
+  .dropdown .lang {
+    padding: 30px 30px;
+  }
+  .language-content a {
+    margin: 0px 0px 0px 30px;
+  }
+}
+@media (min-width: 1920px)
+{
+  .navbar .dropdown .lang {
+  font-size: 180%;
+}
+  .dropdown .lang {
+    padding: 40px 40px;
+  }
+  .language-content a {
+    margin: 0px 0px 0px 40px;
   }
 }
